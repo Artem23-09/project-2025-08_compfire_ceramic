@@ -1,12 +1,13 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
   &__logo {
-
     img {
       width: 100px;
       height: 100px;
@@ -33,7 +34,10 @@
         }
       }
     }
+  }
 
+  &__nav {
+    display: none;
   }
 }
 
@@ -47,5 +51,56 @@
     width: 20px;
     height: 1px;
     background-color: $color-dark;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__nav {
+      display: block;
+      margin-top: 20px;
+    }
+
+    &__list {
+      display: flex;
+      column-gap: 30px;
+      justify-content: center;
+    }
+
+    &__link {
+      font-size: 20px;
+      text-transform: uppercase;
+      transition: all .3s ease-in;
+
+      @media (any-hover: hover) {
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header {
+
+    &__nav {
+      margin-top: 36px;
+    }
+
+    &__list {
+      gap: 60px;
+    }
+
+    &__logo {
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
   }
 }

@@ -5,6 +5,10 @@
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
+
+  @media screen and (min-width: 1600px) {
+    font-size: 32px;
+  }
 }
 
 .title-2 {
