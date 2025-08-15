@@ -5,7 +5,12 @@
 // Base
 // @use '/src/sass/base/pxtorem.scss' as *;
 @use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixins.scss';
 @use '/src/sass/base/base.scss';
+
+// UI
+@use '/src/sass/ui/tiltes.scss';
+@use '/src/sass/ui/buttons.scss';
 
 // Blocks
 @use '/src/sass/blocks/header.scss';

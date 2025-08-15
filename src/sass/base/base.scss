@@ -29,7 +29,7 @@ h5 {
 
 img {
 	display: block;
-	max-inline-size: 100%;
+	max-width: 100%;
 }
 
 a {
@@ -38,6 +38,13 @@ a {
     text-decoration: none;
 }
 
+button {
+  padding: 0;
+  border: none;
+  appearance: none;
+  font: inherit;
+  background-color: transparent;
+}
 
 html {
     scroll-behavior: smooth;
@@ -45,6 +52,8 @@ html {
 
 body {
     font-family: "Barlow", sans-serif;
+    line-height: 1.2;
+    color: $color-dark;
     background-color: $color-light;
 }
 

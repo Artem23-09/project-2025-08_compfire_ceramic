@@ -1,47 +1,51 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__logo {
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+
+  &__icons {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    gap: 15px;
 
-    &__logo {
-        width: 100px;
-        height: 100px;
-    }
+    a {
+      display: block;
+      color: $color-dark;
 
-    &__icons {
-        display: flex;
-        gap: 15px;
+      span {
+        width: 20px;
+        height: 20px;
 
-        a {
-            display: block;
-            color: $color-dark;
+        font-size: 20px;
 
-            span {
-                // width: 20px;
-                // height: 20px;
-
-                font-size: 20px;
-
-                &::before {
-                    margin: 0;
-                }
-            }
+        &::before {
+          margin: 0;
         }
-
+      }
     }
+
+  }
 }
 
 .burger {
-    padding-right: 35px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 
-    span {
-        width: 20px;
-        height: 1px;
-        background-color: $color-dark;
-    }
+  span {
+    width: 20px;
+    height: 1px;
+    background-color: $color-dark;
+  }
 }
