@@ -31,11 +31,14 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     &__container {
       max-width: 530px;
+      margin: 0 auto;
     }
+  }
 
+  @media screen and (min-width: 768px) {
     &__title {
       margin-bottom: 40px;
     }
@@ -48,6 +51,7 @@
       font-size: 20px;
     }
   }
+
   @media screen and (min-width: 1200px) {
     &__container {
       max-width: 1140px;
@@ -66,7 +70,7 @@
     }
     
     &__col:last-child &__text {
-      max-width: 556px;
+      inline-size: 556px;
     }
     
     &__heading {
@@ -77,6 +81,7 @@
       height: 250px;
     }
   }
+  
   @media screen and (min-width: 1920px) {
     &__container {
       max-width: 1440px;
