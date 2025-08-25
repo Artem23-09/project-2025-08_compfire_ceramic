@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website for Ceramic soul brand" />
+  <meta name="author" content="Artem Abramov" />
+  <title>Ceramic | Catalog</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <%- include('./src/templates/header.html') %>
+  <main class="main">
+    <section class="catalog section">
+      <div class="container">
+        <h1 class="catalog__title">our pottery</h1>
+
+        <div class="catalog__tabs">
+          <button class="catalog__btn catalog__btn_active">for tea</button>
+          <button class="catalog__btn">for kitchen</button>
+          <button class="catalog__btn">for plants</button>
+        </div>
+
+        <div class="catalog__content">
+          <div class="catalog__content-item">
+            <article class="catalog__card">
+              <img src="/src/img/form/tea.jpg" alt="img">
+
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Terracotta Whisper
+                </h4>
+
+                <span class="catalog__price">19.99 €</span>
+              </div>
+            </article>
+            <article class="catalog__card">
+              <img src="/src/img/works/tea-2.jpg" alt="img">
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Clay Bloom
+                </h4>
+
+                <span class="catalog__price">24.99 €</span>
+              </div>
+            </article>
+            <article class="catalog__card">
+              <img src="/src/img/works/tea-1.jpg" alt="img">
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Earthen Grace
+                </h4>
+
+                <span class="catalog__price">16.99 €</span>
+              </div>
+            </article>
+            <article class="catalog__card">
+              <img src="/src/img/works/tea-3.jpg" alt="img">
+
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Moss & Moon
+                </h4>
+
+                <span class="catalog__price">21.99 €</span>
+              </div>
+            </article>
+            <article class="catalog__card">
+              <img src="/src/img/form/tea.jpg" alt="img">
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Solace Set
+                </h4>
+                <span class="catalog__price">29.99 €</span>
+              </div>
+            </article>
+          </div>
+          <div class="catalog__content-item">
+            <article class="catalog__card">
+              <img src="/src/img/works/tea-2.jpg" alt="img">
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Clay Bloom
+                </h4>
+
+                <span class="catalog__price">24.99 €</span>
+              </div>
+            </article>
+            <article class="catalog__card">
+              <img src="/src/img/works/tea-1.jpg" alt="img">
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Earthen Grace
+                </h4>
+
+                <span class="catalog__price">16.99 €</span>
+              </div>
+            </article>
+          </div>
+          <div class="catalog__content-item">
+            <article class="catalog__card">
+              <img src="/src/img/works/tea-1.jpg" alt="img">
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Earthen Grace
+                </h4>
+
+                <span class="catalog__price">16.99 €</span>
+              </div>
+            </article>
+            <article class="catalog__card">
+              <img src="/src/img/works/tea-3.jpg" alt="img">
+
+              <div class="catalog__card-content">
+                <h4 class="catalog__card-title">
+                  Moss & Moon
+                </h4>
+
+                <span class="catalog__price">21.99 €</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('./src/templates/footer.html') %>
+
+  <script type="module" src="/src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.touch {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__form {
+    font-size: 14px;
+    line-height: 2;
+    color: $color-dark;
+
+    .just-validate-error-label {
+      font: inherit !important;
+    }
+    .just-validate-error-field {
+      outline: 1px solid $color-ui-error;
+      border-color: transparent;
+    }
+  }
+
+  &__input-block {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input-block--mobile-none {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 9px 15px;
+    width: 100%;
+    border: 1px solid #e2e1e5;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: outline .3s, border-color .3s;
+
+    &:focus {
+      outline: 1px solid $color-ui-error;
+      border-color: transparent;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        outline: transparent;
+        border-color: $color-dark;
+      }
+    }
+
+    &:active {
+      outline: transparent;
+      border-color: $color-dark;
+    }
+
+    &::placeholder {
+      color: $color-ui-disabled;
+    }
+  }
+
+  &__textarea {
+    height: 132px;
+  }
+
+  &__checkbox {
+    margin-bottom: 20px;
+
+    input {
+      &:checked {
+        &::after {
+          color: $color-dark;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__title {
+      margin-bottom: 45px;
+    }
+
+    &__wrapper {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 85px;
+        height: 85px;
+        background-image: url('/src/img/form/vase.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &__input-block {
+      width: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__title {
+      margin-bottom: 80px;
+    }
+
+    &__wrapper {
+      row-gap: 40px;
+    }
+
+    &__col {
+      &:first-child {
+        padding-right: 20px;
+      }
+
+      &:last-child {
+        padding-left: 20px;
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 550px;
+      height: 342px;
+      object-fit: cover;
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    &__img {
+      width: 573px;
+      height: 356px;
+    }
+
+    &__wrapper {
+      column-gap: 147px;
+
+      &::before {
+        right: 75px;
+      }
+    }
+
+    &__col {
+      &:first-child {
+        width: 573px;
+        padding-right: 0;
+      }
+
+      &:last-child {
+        width: 645px;
+        padding-left: 0;
+      }
+    }
+
+    &__form {
+      width: 100%;
+      display: flex;
+      column-gap: 45px;
+    }
+
+    &__input-block--mobile-none {
+      display: block;
+    }
+
+    &__input-block--desctop-none {
+      display: none;
+    }
+  }
+}

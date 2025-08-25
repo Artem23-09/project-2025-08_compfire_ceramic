@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website for Ceramic soul brand" />
+  <meta name="author" content="Artem Abramov" />
+  <title>Ceramic | About</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <%- include('./src/templates/header.html') %>
+  <main class="main">
+    <section class="about section">
+      <div class="container">
+
+        <h1 class="about__title">where it all began</h1>
+
+        <div class="about__inner">
+          <img class="about__img" src="/src//img/about/crafts.jpg" alt="crafts image">
+
+          <div class="about__content">
+            <p>
+              Our small pottery workshop began as a simple passion project, rooted in a love for handmade artistry and
+              traditional craftsmanship. What started with a single wheel and a few lumps of clay has grown into a cozy
+              creative space where ideas take shape and stories are told through every piece. Inspired by timeless
+              techniques and the beauty of natural materials, we’ve built a place where both beginners and experienced
+              artists can come together, share their skills, and celebrate the art of pottery. Each creation reflects
+              our journey—shaped by hand, fired with care, and made to be cherished.
+            </p>
+            <p>
+              Over the years, our workshop has become more than just a place to create—it’s a community. Friends,
+              families, and curious visitors gather here to learn, connect, and experience the joy of working with clay.
+              From intimate masterclasses to collaborative projects, we believe in the power of handmade art to bring
+              people together and spark creativity in unexpected ways.
+            </p>
+            <p>
+              Every piece that leaves our studio carries a bit of our story, blending tradition with personal
+              expression. Whether it’s a simple cup or an intricate vase, our ceramics are crafted to be both beautiful
+              and functional, adding warmth and authenticity to any space.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+   <%- include('./src/templates/touch.html') %>
+    <section class="findus section">
+      <div class="container">
+        <h2 class="findus__title title-2">Find us</h2>
+
+        <div class="findus__map">
+          <iframe class="findus__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9935.140985530163!2d-73.95572764154764!3d40.73079033646094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593c58f8777d%3A0xe2215ac687bd7249!2sCLAY%20SPACE%20Ceramic%20Center!5e1!3m2!1suk!2scz!4v1755665405055!5m2!1suk!2scz"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('./src/templates/footer.html') %>
+  <script type="module" src="/src/js/script.js"></script>
+</body>
+
+</html>
